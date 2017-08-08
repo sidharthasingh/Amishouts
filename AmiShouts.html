@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>AmiShouts</title>
+
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="css/newshout.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/AmiShouts.css">
+		<link rel="stylesheet" type="text/css" href="css/shout.css">
+
+		<script type="text/javascript" src="js/redirect.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript">
+			validateCookie();
+			setCookie("onpage","AmiShouts.html",1);
+		</script>
+		<script src="js/jquery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/sidebar.js"></script>
+		<script type="text/javascript" src="js/shout.js"></script>
+		<script type="text/javascript" src="js/newshout.js"></script>
+
+	</head>
+	<body onclick="retroBebe()">
+		<div id="here"></div>
+		<div id="sidenav" class="sidenav">
+		</div>
+	   	<header>
+		<h1>
+			AmiShouts
+		</h1>
+		</header>
+		<div class="newshout">
+	   		<div class="shouttext">
+				<textarea id="shoutarea" placeholder="What's on your mind? ;-)"></textarea>
+			</div>
+			<div class="shoutsubmit">
+				<input type="submit" onClick="newShout(1)" value="SHOUT">
+			</div>
+		</div>
+		<div id="shout">
+		</div>
+		<div class="menu_button" onclick="retroBabe(!navMode);">
+	   			<i class="fa fa-bars fa-2x"></i>
+	   	</div>
+	   	<div class="newshoutbutton">
+			<input id="newshoutbutton" type="button" value="+">
+		</div>
+		<div class="load_more">
+			<input type="button" onclick="loadmore()" name="loadMore" value="load more">
+		</div>
+		<div id="wait1">
+			<img src='images/ajax_loader.gif'/>
+		</div>
+		<div>
+			<footer>
+				created with &hearts; in New Delhi.
+			</footer>
+		</div>
+		<script type="text/javascript">
+			loadsideBar();
+			$("#newshoutbutton").click(function() {
+    		$('html, body').animate({
+        		scrollTop: $("#here").offset().top
+    		}, 500);
+			});
+			load_shout_content();
+			$(window).bind("load", function(){
+			$("#wait").css("display","none");
+			$("#log1").css("display","block");
+			$(".footer").css("display","block");
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+.comment-short-container{
+    width:  70%;
+    position:relative;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(52,73,94,0.7);
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top:10px;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.comment-short-view{
+    color: #FFFFFF;
+    font-size: 20px;
+    width:80%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rating{
+    color: #FFFFFF;
+    position: relative;
+    font-size: 20px;
+    width: 20%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

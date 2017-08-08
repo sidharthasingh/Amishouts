@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html onclick="retroBebe()">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Comments</title>
+
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript">
+			if(!checkCookie("amishouts_user") || !checkCookie("sess_ID"))
+				window.location="index.html";
+			setCookie("onpage","comment.html",1);
+		</script>
+		<script src="js/jquery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/redirect.js"></script>
+		<script type="text/javascript" src="js/sidebar.js"></script>
+		<script type="text/javascript" src="js/comment.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/AmiShouts.css">
+		<link rel="stylesheet" type="text/css" href="css/comment.css">
+
+	</head>
+	<body>
+		<div id="sidenav" class="sidenav">
+		</div>
+		<div class="menu_button" onclick="retroBabe(!navMode);">
+	   			<i class="fa fa-bars fa-2x"></i>
+	   	</div>
+		<div data-role="header" data-position="fixed">
+	   		<header>
+				<h1>
+					AmiShouts
+				</h1>
+			</header>
+		</div>
+		<div id="shout">
+		</div>
+		<div id="content">
+		</div>
+		<div id="comment_box">
+			<form>
+				<input type="text" id="comment_input" placeholder="write a comment...">
+				<input type="submit" value="comment" onclick="return send_comment()">
+			</form>
+		</div>
+		<script type="text/javascript">
+			loadsideBar();
+			load_comment_content();
+		</script>
+	</body>
+</html>

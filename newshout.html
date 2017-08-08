@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Make a shout</title>
+
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript">
+			if(checkCookie("amishouts_user")==false || checkCookie("sess_ID")==false)
+				window.location="index.html";
+			setCookie("onpage","newshout.html",1);
+		</script>
+		<script src="js/jquery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/redirect.js"></script>
+		<script type="text/javascript" src="js/sidebar.js"></script>
+		<script type="text/javascript" src="js/newshout.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="css/AmiShouts.css">
+		<link rel="stylesheet" type="text/css" href="css/newshout.css">
+
+	</head>
+	<body onclick="retroBebe()">
+		<div id="sidenav" class="sidenav">
+		</div>
+	   	<header>
+		<h1>
+			AmiShouts
+		</h1>
+		</header>
+		<div class="menu_button" onclick="retroBabe(!navMode);">
+	   			<i class="fa fa-bars fa-2x"></i>
+	   	</div>
+	   	<div class="newshout">
+	   		<div class="shouttext">
+				<textarea id="shoutarea" placeholder="What's on your mind? ;-)"></textarea>
+			</div>
+			<div class="shoutsubmit">
+				<input type="submit" onClick="newShout(0)" value="SHOUT">
+			</div>
+		</div>
+		<div>	
+			<footer>
+				created with &hearts; in New Delhi.
+			</footer>
+		</div>
+		<script>
+			loadsideBar();
+		</script>
+	</body>
+</html>

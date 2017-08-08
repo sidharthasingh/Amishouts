@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="txt"><h2>Let AJAX change this text</h2></div>
+
+<button>Change Content</button>
+
+<div id="wait" style="display:none;position:absolute;top:50%;left:50%;padding:2px;"><img src='kk.gif'/><br>Loading..</div>
+<script>
+    $("button").click(function(){
+        // $("#txt").load("alert()");
+        $("#wait").css("display", "block");
+        xml=new XMLHttpRequest();
+        xml.onreadystatechange=function(){
+        	if(this.readyState==4 && this.status==200){
+        		// alert(this.responseText);
+        		$("#wait").css("display", "none");
+        	}
+        	else if(this.status==404){
+        		alert("error");
+        	}
+        }
+        xml.open("GET","kk.php?kk=true",true);
+        xml.send();
+    });
+</script>
+</body>
+</html>

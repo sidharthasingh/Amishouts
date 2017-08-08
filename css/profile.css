@@ -1,0 +1,50 @@
+body{
+	font-size: 10px;
+}
+.name{
+	font-size: 25px;
+}
+hr{
+	width: 85%;
+	max-width: 200px;
+	height: 2px;
+	border: 0px;
+	background-color: #222;
+}
+.changep{
+	color: #55F;
+}
+
+.changep #form{
+	display: none;
+}
+
+.changep input{
+	margin: 5px;
+	border: 0;
+	border-radius: 3px;
+	padding-left: 3px; 
+	height: 0px;
+	width: 250px;
+}
+
+.changep input[type="button"]
+{
+	background-color: #673AB7;
+	color: #FFF;
+	font-size: 25px;
+	height: 0px;
+}
+
+#nothing-to-show{
+	display: none;
+	padding: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #444;
+}
+
+#nothing-to-show a{
+	color: #222;
+	text-decoration: none;
+}

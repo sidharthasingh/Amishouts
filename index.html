@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AmiShouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="google-signin-client_id" content="237368345464-je52rfi0qvefq6eki568cehs3nofc5p3.apps.googleusercontent.com">
+
+        <script src="js/cookie.js" type="text/javascript" ></script>
+		<script type="text/javascript">
+    		if(checkCookie("amishouts_user") && checkCookie("sess_ID"))
+                window.location="AmiShouts.html";
+            else
+      	    	deleteAllCookie();
+    	</script>
+		<script type="text/javascript" src="/js/jquery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">damon_var="";</script>
+		<script src="js/validation.js" type="text/javascript"></script>
+    	<script type="text/javascript" src="js/google.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+		<link href="css/index.css" rel='stylesheet' type='text/css' media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+	</head>
+	<body>
+		<div id="wait">
+			<center><img src='images/ajax_loader.gif'/>
+			<br>Loading..
+			</center>
+		</div>
+		<h1>AmiShouts</h1>
+		<div class="log" style="display:none;">
+			<div id="log1">
+				<div class="content1 agileits">
+					<h2 id="sign-in-heading">Sign In</h2>
+					<form>
+						<span><input id="login_username" type="email" name="email" placeholder="Email Address">
+						<input id="login_password" type="password" name="psw" placeholder="Password"></span>
+						<div class="button-row">
+							<input id="sign_in_submit" type="submit" class="sign-in" value="Sign In" onClick="return login_all_ok();">
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="log2" style="display:none;">
+				<div class="content1 agileits">
+					<h2 id="sign-up-heading">Let's add security <i class="fa fa-lock" aria-hidden="true"></i></h2>
+					<form>
+						<input id="phone_no" type="text" name="phone" placeholder="Phone Number">
+						<input id="signup_pass" type="password" name="psw" placeholder="Password">
+						<input id="signup_cpass" type="password" name="cpsw" placeholder="Confirm Password">
+						<div class="button-row" style="padding-bottom:25px;">
+							<input type="submit" class="sign-in" value="Complete" onClick="return signup_all_ok(1);">
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="log3" style="display:none;">
+				<div class="content1 agileits">
+					<h2 id="sign-up-heading">Sign Up form</h2>
+					<form>
+						<input id="sufname" type="text" name="phone" placeholder="First Name">
+						<input id="sulname" type="text" name="phone" placeholder="Last Name">
+						<input id="suemail" type="text" name="phone" placeholder="E-mail">
+						<input id="suphone" type="text" name="phone" placeholder="Phone Number">
+						<input id="su_pass" type="password" name="psw" placeholder="Password">
+						<input id="su_cpass" type="password" name="cpsw" placeholder="Confirm Password">
+						<div class="button-row" style="padding-bottom:25px;">
+							<input type="submit" class="sign-in" value="Complete" onClick="return signup_all_ok(0);">
+							<div class="clear"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="down_options">
+				<h3>
+					<div id="register-with-us">
+						<div style="padding-bottom: 10px;">
+							<a href="javascript:register_option();">Register with us</a> 
+						</div>
+					</div>
+					<div id="register-using" style="display:none;opacity:0;">
+						<div style="padding-bottom: 10px;">
+							Sign up using Google
+						</div>
+						<div><div id="m-signin2"></div></div>
+						<div class="fb-login-button" scope="public_profile, email" onlogin="temp();" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+					</div>
+					<div id="or">
+						<span><hr></span>
+						<span>OR</span>
+						<span><hr></span>
+					</div>
+					<div id="pass_reset">
+						<a href="">Reset Password</a>
+					</div>
+					<div id="goback" style="display:none;">
+						<a href="javascript:gobacktosignin();">Go back to Sign In</a>
+					</div>
+				</h3>
+			</div>
+		</div>
+		<div class="footer" style="display:none;">
+			<p>&#9786; 2017 AmiShouts, 5iD inc.</p>
+		</div>
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<script type="text/javascript">
+			$(window).bind("load", function(){
+				$("#wait").css("display","none");
+				$(".log").css("display","block");
+				$(".footer").css("display","block");
+			});
+		</script>
+	</body>
+</html>

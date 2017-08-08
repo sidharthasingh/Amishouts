@@ -1,0 +1,136 @@
+body{
+margin: 0 auto;
+background-color:#111111;
+background-repeat:no-repeat;
+background-size: 100% 720px;
+position:relative;
+}
+header{
+	text-align: center;
+	color:#AAAAAA;
+	font-size: 40px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+.container{
+width:  60%;
+position:relative;
+text-align: center;
+margin: 0 auto;
+background-color: rgba(52,73,94,0.7);
+border-radius: 4px;
+margin: 0 auto;
+margin-top:20px;
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+padding: 0;
+padding-top: 50px;
+}
+
+a[href="forgot_pass.html"]
+{
+	color:white;
+}
+
+#login_username,#login_password , #password, #name, #enter_username, #enter_password, #confirm_password, #email{
+height:45px;
+border:none;
+width:50%;
+font-size:18px;
+margin-bottom:20px;
+background-color: #fff;
+padding-left:45px;
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+font-family: "FontAwesome";
+}
+
+#fname, #lname, #email, #phone_no{
+height:45px;
+border:none;
+width:22%;
+font-size:18px;
+margin-bottom:20px;
+background-color: #fff;
+padding-left:45px;
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+font-family: "FontAwesome";
+}
+
+.form-input1::before,.form-input2::before{
+content:"\f007";
+position:absolute;
+font-family: "FontAwesome";
+padding-left:5px;
+padding-top:7px;
+color: 	#000;
+font-size: 30px;
+}
+
+.form-input2e::before{
+content:"\f01C";
+position:absolute;
+font-family: "FontAwesome";
+padding-left:5px;
+padding-top:7px;
+color: 	#000;
+font-size: 30px;
+}
+
+.form-input2p::before{
+content:"\f095";
+position:absolute;
+font-family: "FontAwesome";
+padding-left:5px;
+padding-top:7px;
+color: 	#000;
+font-size: 30px;
+}
+
+.form-input1:nth-child(2)::before, .form-input2:nth-child(3)::before, .form-input2:nth-child(4)::before
+{
+content:"\f023";
+}
+
+#submit1, #submit2
+{
+padding: 15px 30px;
+cursor:pointer;
+color:#fff;
+border-radius:4px;
+background-color:#666666;
+border:none;
+box-shadow: 10px 10px 5px #888888;
+margin-bottom: 20px;
+margin-top: 12px;
+font-size: 13px;
+box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.5);
+}
+
+p{
+color:#fff;
+padding:20px;
+}
+
+.container button{
+width: 49.8%;
+margin:0px 0px 0px 0px;
+background-color:#666666;
+border:none;
+color: #fff;
+font-size: 22px;
+padding:10px;
+}
+
+#button2
+{
+	background-color: rgba(52,73,94,0.7);
+	margin-left:-4px;
+}
+
+.text{
+	color: white;
+	font-family: "FontAwesome";
+	padding-bottom: 10px;
+}
+.g-signin2{
+	padding-bottom: 20px;
+}

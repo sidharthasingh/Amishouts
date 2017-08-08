@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>AmiShouts</title>
+		
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script type="text/javascript">
+			if(!checkCookie("amishouts_user") || !checkCookie("sess_ID"))
+				window.location="index.html";
+			setCookie("onpage","profile.html",1);
+			profile_count_post=0;
+		</script>
+		<script src="js/jquery/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/profile.js"></script>
+		<script type="text/javascript" src="js/redirect.js"></script>
+		<script type="text/javascript" src="js/sidebar.js"></script>
+		<script type="text/javascript" src="js/shout.js"></script>
+
+
+		<link rel="stylesheet" type="text/css" href="css/profile.css">
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+		<link rel="stylesheet" type="text/css" href="css/shout.css">
+		<link rel="stylesheet" type="text/css" href="css/AmiShouts.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	</head>
+	<body onclick="retroBebe()">
+		<div id="sidenav" class="sidenav">
+		</div>
+	   	<header>
+		<h1>
+			AmiShouts
+		</h1>
+		</header>
+		<div class="menu_button" onclick="retroBabe(!navMode);">
+	   			<i class="fa fa-bars fa-2x"></i>
+	   	</div>
+	   	<!-- the content goes here. -->
+	   	<center>
+		   	<div class="name">
+		   	</div>
+		   	<hr>
+		   	<div class="email">
+		   	</div>
+		   	<hr>
+		   	<div class="phone">
+		   	</div>
+		   	<hr>
+		   	<div class="changep" onclick="changeps()">
+		   		<div id="text">
+		   			change password
+		   		</div>
+		   		<div id="form">
+		   			<div><input id="currp" type="password" placeholder="current password"></div>
+		   			<div><input id="newp" type="password" placeholder="new password"></div>
+		   			<div><input id="cnewp" type="password" placeholder="confirm password"></div>
+		   			<div><input type="button" value="Change Password" onclick="changeps_sub()"></div>
+		   		</div>
+		   	</div>
+	   	</center>
+	   	<div id="shout">
+		</div>
+		<div id="nothing-to-show">
+			There is nothing to show here. Fill it with some AweSomeness plzzz...
+			<a href="newshout.html">_here_</a>
+		</div>
+		<div>	
+			<footer>
+				created with &hearts; in New Delhi.
+			</footer>
+		</div>
+		<script>
+			loadsideBar();
+			load_profile();
+			load_profile_content();
+		</script>
+	</body>
+</html>

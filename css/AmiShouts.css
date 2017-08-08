@@ -1,0 +1,81 @@
+/*@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgba(200,200,200,0.5);
+}
+
+body{
+    font:14px/1.5 Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+header{
+    position: block;
+    box-sizing: border-box;
+	text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #673AB7;
+    overflow: hidden;
+}
+
+
+header h1{
+    float: center;
+	font: normal 24px/1.6 'Open Sans', sans-serif;
+    font-size: 30px;
+	color: #fff;
+}
+
+header a{
+    color:#fff;
+    float: right;
+    text-decoration: none;
+    display: inline-block;
+    padding: 13px 50px;
+    border-radius: 3px;
+    font: bold 14px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background-color:#F05283;
+    margin: 5px;
+}
+
+.menu_button{
+    position: absolute;
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    padding: 13px 10px;
+    width: 50px;
+    height: 50px;
+    color: #000;
+}
+
+@media (max-width: 1000px) 
+{
+    header h1
+    {
+        float: none;
+    }
+    header a
+    {
+        margin-top: 25px;
+        float: none;
+    }
+}
+
+footer{
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    bottom:0px;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
